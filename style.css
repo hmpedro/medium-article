@@ -1,0 +1,50 @@
+/* General styling */
+
+html, body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    font-family: Lucida Grande, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+/* General styling */
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 10px 740px 10px 1fr 1fr;
+}
+
+article > p {
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 1.58;
+    color: rgba(0,0,0,.84);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+article > * {
+    grid-column: 4;
+}
+
+article > figure {
+    grid-column: 2 / -2;
+    margin: 20px 0;
+}
+
+article > blockquote {
+    grid-column: 3 / span 2;
+    padding-left: 10px;
+    color: #666;
+    border-left: 3px solid black;
+}
+
+.aside {
+    grid-column: 5;
+}
